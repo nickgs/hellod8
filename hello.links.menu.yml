@@ -1,0 +1,3 @@
+hello.sayHi:
+  title: "Say Hi"
+  route_name: hello.sayHi
