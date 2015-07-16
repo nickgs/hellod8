@@ -1,6 +1,5 @@
-name: 'Hello Drupal 8'
-description: 'Lets say hi'
-type: 'module'
-
+name: Hello
+description: A friendly Drupal 8 module
+type: module
+package: Learning
 core: 8.x
-

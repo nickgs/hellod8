@@ -5,11 +5,26 @@ hello.sayHi:
     name: 'Nick'
   requirements:
     _permission: 'access content'
-
+    name: ^N[a-z]+
+    
+hello.sayHiTheme:
+  path: '/hello_again/{name}'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloController::sayHiTheme'
+    name: 'Nick'
+  requirements:
+    _permission: 'access content'
+    
 hello.requestHi:
   path: '/hello/request'
   defaults:
     _form: '\Drupal\hello\Form\HelloRequestForm'
   requirements:
     _permission: 'access content'
-
+    
+hello.configHi:
+  path: '/hello/config'
+  defaults:
+    _form: '\Drupal\hello\Form\HelloConfigForm'
+  requirements:
+    _permission: 'access content'
